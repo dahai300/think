@@ -1,0 +1,113 @@
+
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title>后台管理系统</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <link href="assets/css/dpl-min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/bui-min.css" rel="stylesheet" type="text/css" />
+   <link href="assets/css/main-min.css" rel="stylesheet" type="text/css" />
+ </head>
+ <body>
+
+  <div class="header">
+    
+      <div class="dl-title">
+       <img src="assets/img/top.png" style="height:30px">
+      </div>
+
+    <div class="dl-log">欢迎您，<span class="dl-log-user">root</span><a href="/chinapost/index.php?m=Public&a=logout" title="退出系统" class="dl-log-quit">[退出]</a>
+    </div>
+  </div>
+   <div class="content">
+    <div class="dl-main-nav">
+      <div class="dl-inform"><div class="dl-inform-title"><s class="dl-inform-icon dl-up"></s></div></div>
+      <ul id="J_Nav"  class="nav-list ks-clear">
+        		<li class="nav-item dl-selected"><div class="nav-item-inner nav-home">产品中心</div></li>		
+            <li class="nav-item dl-selected"><div class="nav-item-inner nav-order">文章列表</div></li>       
+            <li class="nav-item dl-selected"><div class="nav-item-inner nav-order">单页管理</div></li>
+            <li class="nav-item dl-selected"><div class="nav-item-inner nav-order">人才招聘</div></li>  
+            <li class="nav-item dl-selected"><div class="nav-item-inner nav-order">友情链接</div></li>  
+            <li class="nav-item dl-selected"><div class="nav-item-inner nav-order">网站设置</div></li>  
+      </ul>
+    </div>
+    <ul id="J_NavContent" class="dl-tab-conten">
+
+    </ul>
+   </div>
+  <script type="text/javascript" src="assets/js/jquery-1.8.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/bui-min.js"></script>
+  <script type="text/javascript" src="assets/js/common/main-min.js"></script>
+  <script type="text/javascript" src="assets/js/config-min.js"></script>
+  <script>
+    BUI.use('common/main',function(){
+      var config = [
+        {
+          id:'1',
+          homePage : '11',
+          menu:[{
+            text:'产品中心',
+            items:[
+            {id:'11',text:'产品添加',href:'Node/index.html'},
+            {id:'12',text:'产品列表',href:'Role/index.html'}
+            ]
+          }]
+        },
+        {
+        id:'2',
+        homePage : '21',
+        menu:[{
+          text:'文章列表',
+          items:[
+          {id:'21',text:'文章添加',href:'Node/index.html'},
+          {id:'22',text:'文章列表',href:'Node/index.html'},
+          {id:'23',text:'文章分类',href:'Node/index.html'},
+          ]
+        }]
+      },
+        {
+        id:'3',
+        menu:[{
+          text:'单页管理',
+          items:[
+          {id:'31',text:'单页列表',href:'Node/index.html'}
+          ]
+        }]
+      },
+        {
+        id:'4',
+        menu:[{
+          text:'人才招聘',
+          items:[
+          {id:'41',text:'发布信息',href:'Node/index.html'},
+          {id:'42',text:'招聘列表',href:'Node/index.html'}
+          ]
+        }]
+      },
+        {
+        id:'5',
+        menu:[{
+          text:'友情链接',
+          items:[
+          {id:'51',text:'列表',href:'Node/index.html'},
+          {id:'52',text:'添加',href:'Node/index.html'}
+          ]
+        }]
+      },
+        {
+        id:'6',
+        menu:[{
+          text:'网站设置',
+          items:[
+          {id:'61',text:'设置',href:'Node/index.html'}
+          ]
+        }]
+      }
+    ];
+      new PageUtil.MainPage({
+        modulesConfig : config
+      });
+    });
+  </script>
+ </body>
+</html>

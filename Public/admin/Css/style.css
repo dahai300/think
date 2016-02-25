@@ -1,0 +1,125 @@
+@charset "utf-8";
+body{
+    font-size: 13px;
+}
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    padding:2px 5px;
+}
+
+select {
+    height: 24px;
+    line-height: 24px;
+}
+
+.radio{
+    font-size: 11px;
+    margin-bottom: 4px;
+}
+
+.nav{
+    margin-bottom: 5px;
+}
+
+form{
+    margin: 0 0 5px;
+}
+
+.page{
+    text-align: right;margin-right:25px;margin-top:5px;
+}
+
+.page a{
+    margin-left: 5px;
+}
+
+.page .current{
+    margin-left: 5px;
+    color: red;
+}
+
+.table td input[type="checkbox"]{
+    padding: 0;
+    margin: 0;
+}
+
+.table th input[type="checkbox"]{
+    padding: 0;
+    margin: 0;
+}
+
+.table td, .table th{
+    padding-top: 8px;
+    padding-bottom: 4px;
+	line-height:20ppx;
+	
+}
+.table th{
+   
+	background-color:#eaeaea;
+}
+
+.definewidth{
+	width:96%;
+	margin:auto;		
+}
+.m10{
+	margin-top:10px;
+}
+.m20{
+	padding-top:20px;
+}
+
+.tableleft{
+	text-align:right;
+	padding-left:5px;
+	background-color:#f5f5f5;
+
+}
+
+
+/*formValidator表单验证*/
+.onShow,.onFocus,.onError,.onCorrect,.onLoad,.onTime{display:inline-block;display:-moz-inline-stack;zoom:1;*display:inline; vertical-align:middle;background:url(../Images/msg_bg.png) no-repeat;	color:#444;line-height:18px;padding:2px 10px 2px 23px; margin-left:10px;_margin-left:5px}
+.onShow{background-position:3px -147px;border-color:#40B3FF;color:#959595}
+.onFocus{background-position:3px -147px;border-color:#40B3FF;}
+.onError{background-position:3px -47px;border-color:#40B3FF; color:red}
+.onCorrect{background-position:3px -247px;border-color:#40B3FF;}
+.onLamp{background-position:3px -200px}
+.onTime{background-position:3px -1356px}
+
+.sdiv{ display: block; background: #f2f2f2; margin: 6px auto; border:1px solid #e7e7e7; width: 96%; text-indent: 15px; height: 30px; line-height: 30px; padding: 5px 0; border-radius: 4px; -webkit-border-radius: 4px; }
+.sdiv i{ font-size: 14px; font-style: normal;}
+.sdiv select{ height: 30px; line-height: 30px;}
+.sdiv input[type='text']{width:30%;}
+.sdiv input[type='submit']{vertical-align:top;}
+
+/* LOGIN FORM */
+.loginbg{ background: #e0dfe0}
+.login{ height: 144px; padding-top: 70px; position: relative; margin-top: 140px;}
+.login-c{ height: 144px; background: #3f306c; position: relative;}
+.login-cc{ width: 700px;margin: 0 auto;height: 144px; position: relative;  }
+.lg_error{ color: #b4b4b6; padding-left: 10px; font-size: 12px;}
+.error{ color: #d00}
+.fly{ width: 284px; height: 214px; display: block; position: absolute; background: url(../assets/img/fly.png) 0 0 no-repeat; left: 0; top: -70px}
+.lg-info{ width: 260px; position: absolute; left: 315px; top: -70px;}
+.lg-title{ width: 250px; height: 70px; background: url(../assets/img/atitle.png) 0 0 no-repeat; display: block;}
+.lg-ipt{ width: 260px; position: absolute; left: 0; top: 75px;}
+#submitBtn{ border: 0; border:none; background: #ef6630; color: #fff; text-align: center; cursor: pointer; height: 30px; line-height: 30px; padding: 0 18px; border-radius: 4px; -webkit-border-radius: 4px; }
+#submitBtn:hover{background: #fa5f22;}
+.form-row{ height: 22px; line-height: 22px; display: block;position: relative;z-index: 100;padding: 6px 10px;border: 0; border:none;background: #FFF;border-radius: 4px; -webkit-border-radius: 4px; margin: 10px 0;}
+.user_ico {background: url(../assets/img/lg_icon.png) no-repeat 0 -5px;}
+.paswd_ico {background: url(../assets/img/lg_icon.png) no-repeat 0 -26px;}
+.form-row label{display: inline-block;width: 24px;vertical-align: middle;color: #666;}
+.ipt {width: 195px;height: 22px;padding-left: 3px;border: 0;border:none;line-height: 22px;vertical-align: middle;font-family: "Microsoft YaHei";font-size: 14px;}
+.form-row input[type="text"],.form-row input[type="password"]{background-color: #ffffff;border: 0;border:none;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;-webkit-transition:none;-moz-transition:none;-o-transition:none;transition:none;}
+
+.re-category{ width: 96%; margin: 0 auto;}
+.categorysel { margin:30px 0 15px 0; }
+.categorysel { float:left; display:block; position:relative; z-index:1;}
+.categorysel p, .categorysel p span, .categorysel p s { float:left; cursor:pointer;}
+.categorysel p s{ float: right}
+.categorysel p { background:#fff; border:#d9d9d9  1px solid; line-height:25px; height:25px; overflow:hidden; padding:0 10px; margin:0; position:relative; width: 150px;}
+.categorysel p s { background: url(../assets/img/sprite-469-300.png) -1px -218px; display:block; width:8px; height:8px; overflow:hidden; margin:10px 0 0 10px;}
+.categorysel .catelist { display:none; border:#d9d9d9 1px solid; background:#fff; width:150px; padding:10px; left:0; top:25px; position:absolute;}
+.mhover p { z-index:2; border-bottom:#fff 1px solid;}
+.mhover .catelist { display:block;}
+.catelist-ul li{ width: 100%; height: 22px; line-height: 22px; display: block; cursor: pointer;}
